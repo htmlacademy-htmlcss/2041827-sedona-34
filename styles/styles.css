@@ -14,18 +14,37 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT-Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
+}
+
+.page-container {
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.header-logo {
+  width: 139px;
+  margin-left: 70px;
+  margin-right: 30px;
 }
 
 .button {
@@ -37,6 +56,28 @@ body {
   background-color: #756157;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 450px;
+  list-style: none;
+}
+
+.navigation-user {
+  max-width: 264px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -56,10 +97,25 @@ body {
   background-repeat: no-repeat;
 }
 
+.welcome h1 {
+  margin: 0;
+}
+
+.welcome-image {
+  display: block;
+  margin: 0 auto;
+}
+
 .small-town {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  background-color: #FFFFFF;
+  height: 284px;
+}
+
+.small-town p {
+  margin: 0;
 }
 
 .small-town-description {
@@ -70,14 +126,49 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  list-style: none;
+}
+
+.advantages h2 {
+  margin: 0;
 }
 
 .advantages-item {
-  background-color: rgba(131, 179, 211, 0.12);
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.advantages-item-food {
+.advantages-sublist {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-subitem {
+  list-style: none;
+  margin: 0;
+  width: 400px;
+  height: 384px;
+}
+
+.advantages-other {
+  background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  height: 384px;
+}
+
+.advantages-item-text {
+  margin: 0;
+  width: 400px;
+  height: 384px;
+}
+
+.advantages-subitem-food {
   background-color: #FFFFFF;
 }
 
@@ -106,9 +197,11 @@ body {
   line-height: 26px;
   text-align: center;
   background-color: #FFFFFF;
+  height: 417px;
 }
 
 .interested h2 {
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -128,9 +221,11 @@ body {
   background-image: url(../images/background/subscribe-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  height: 411px;
 }
 
 .subscribe-title {
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -145,7 +240,24 @@ body {
 }
 
 .page-footer {
+  display: flex;
   background-color: #FFFFFF;
+}
+
+.footer-social {
+  margin-left: 47px;
+  width: 116px;
+}
+
+.footer-contacts {
+  text-align: center;
+  margin-left: 52px;
+  width: 720px;
+}
+
+.footer-logo {
+  width: 115px;
+  margin-left: 53px;
 }
 
 .footer-contacts-address-phone {
@@ -155,8 +267,24 @@ body {
   color: #000000;
   text-decoration-line: none;
   font-weight: 400;
-  text-align: center;
   text-transform: uppercase;
+}
+
+.inner-header h1 {
+  margin: 0;
+}
+
+.filter-form{
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin-left: 70px;
+}
+
+.filter-form-buttons {
+  display: flex;
+  flex-direction: column;
+  height: 48px;
 }
 
 .hotels-catalog {
@@ -171,6 +299,7 @@ body {
   line-height: 78px;
   font-weight: 700;
 }
+
 .catalog-filter-title {
   font-size: 20px;
   line-height: 26px;
@@ -217,12 +346,36 @@ body {
   background-color:  #7DB54F;
 }
 
+.hotel-list-total {
+  background-color: #FFFFFF;
+}
+
+.sorting-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-list-container {
+  width: 1056px;
+  margin-left: 73px;
+}
+
+.hotels-found {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .rating-result {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #000000;
   background-color: #F2F2F2;
+  width: 140px;
+  text-align: center;
 }
 
 .pagination {
@@ -253,4 +406,5 @@ body {
   text-align: center;
   color: #000000;
   background-color: #FFFFFF;
+  height: 411px;
 }

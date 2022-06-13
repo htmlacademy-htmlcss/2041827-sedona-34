@@ -8,7 +8,7 @@
 </head>
 
 <body>
-
+  <div class="page-container">
   <header class="page-header">
     <nav class="navigation">
       <a href="index.html">
@@ -24,19 +24,21 @@
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
-        <li class="navigation-user">
+      </ul>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">
               Поиск
             </span></a>
         </li>
-        <li class="navigation-user">
+        <li class="navigation-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">
               Избранное
             </span></a>
         </li>
-        <li class="navigation-user">
+        <li class="navigation-item">
           <a class="button header-button" href="#">
             <span class="visually-hidden">
               Хочу сюда!
@@ -47,31 +49,31 @@
     </nav>
   </header>
 
-  <main class="main-index">
+  <main class="main-container main-index">
     <section class="welcome">
       <h1 class="visually-hidden">Добро пожаловать в город Седона</h1>
       <img class="welcome-image" src="images/welcome-words.svg" width="457" height="351" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
     </section>
     <section class="small-town">
-      <h2 class="visually-hidden">Город Седона</h2>
       <p class="small-town-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <ol class="advantages-list">
+      <ul class="advantages-list">
         <li class="advantages-item">
           <div class="advantages-item-text">
             <h3 class="advantages-item-title">Настоящий городок</h3>
             <span class="advantages-number">— №1 —</span>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
+          <img class="advantages-image" src="images/advantages-1.jpg" width="800" height="384" alt="Один из домиков Седоны">
           <ul class="advantages-sublist">
             <li class="advantages-subitem">
               <h4>Жильё</h4>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="advantages-subitem advantages-item-food">
+            <li class="advantages-subitem advantages-subitem-food">
               <h4>Еда</h4>
               <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
@@ -82,28 +84,29 @@
           </ul>
         </li>
         <li class="advantages-item">
+          <img class="advantages-image" src="images/advantages-2.jpg" width="800" height="384" alt="Каньон Седоны">
           <div class="advantages-item-text">
             <h3 class="advantages-item-title">Там есть мост дьявола</h3>
             <span class="advantages-number">— №2 —</span>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
         </li>
-        <li class="advantages-item">
+        <li class="advantages-other">
           <h4>Небольшая площадь</h4>
           <span class="advantages-number">— №3 —</span>
           <p>Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="advantages-item advantages-item-road">
+        <li class="advantages-other advantages-item-road">
           <h4>Красивая дорога</h4>
           <span class="advantages-number">— №4 —</span>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class="advantages-item">
+        <li class="advantages-other">
           <h4>Мало туристов</h4>
           <span class="advantages-number">— №5 —</span>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
-      </ol>
+      </ul>
     </section>
     <section class="interested">
       <h2 class="interested-title">Заинтересовались?</h2>
@@ -155,6 +158,7 @@
       </a>
     </section>
   </footer>
+  </div>
 </body>
 
 </html>
