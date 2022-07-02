@@ -130,21 +130,24 @@ body {
   line-height: 26px;
   text-align: center;
   background-color: #FFFFFF;
+  padding-top: 63px;
+  padding-bottom: 90px;
 }
 
 .small-town-description {
+  display: block;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 63px 31px;
   margin: 0;
+  margin-bottom: 31px;
   }
 
 .small-town-reasons {
+  display: block;
   font-size: 22px;
   margin: 0;
-  padding-bottom: 90px;
 }
 
 .advantages-list {
@@ -290,7 +293,8 @@ body {
   background-image: url(../images/background/subscribe-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
-  padding: 94px 200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .subscribe-title {
@@ -430,10 +434,6 @@ body {
   background-color: #82B3D3;
 }
 
-.product-card {
-  background-color: #ffffff;
-}
-
 .product-card-link {
   font-size: 24px;
   line-height: 28px;
@@ -478,9 +478,58 @@ body {
 }
 
 .product-list {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
+  margin-bottom: 96px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.product-card {
+  object-fit: contain;
+}
+
+.product-card-image {
+  object-fit: contain;
+}
+
+.product-card-link {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.product-card-title {
+  display: block;
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.product-card-info {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
+}
+
+.product-card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-card .button {
+  text-align: center;
+  margin-top: auto;
 }
 
 .hotels-found {
@@ -543,7 +592,6 @@ body {
 }
 
 .hotels-on-page {
-
   color: #333333;
 }
 
