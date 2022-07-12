@@ -227,30 +227,31 @@
     <div class="modal-container">
       <div class="modal modal-search">
         <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть окно</span>
           <svg class="modal-close-icon" aria-hidden="true" focusable="false" width="13" height="13"
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13">
             <path
               d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
           </svg>
         </button>
+
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="modal-field-trip-date">
-              <div class="modal-field-date">
+            <div class="modal-field-trip-dates">
+              <div class="modal-field-dates">
                 <label class="modal-field-label" for="arrival-date">Дата Заезда:</label>
-                <input class="field modal-input-date" id="arrival-date" type="text" name="arrival-date"
+                <input class="modal-input-date" id="arrival-date" type="text" name="arrival-date"
                   placeholder="27 апреля 2020">
-                <button class="modal-date-button" type="button">
+                  <button class="modal-date-button" type="button">
                   <span class="visually-hidden">Календарь</span>
                 </button>
                 <span class="modal-date-text modal-date-text-invalid">Мы не можем отправить вас в прошлое.</span>
               </div>
 
-              <div class="modal-field-trip-date">
+              <div class="modal-field-dates">
                 <label class="modal-field-label" for="departure-date">Дата Выезда:</label>
-                <input class="field modal-input-date" id="departure-date" type="text" name="departure-date"
+                <input class="modal-input-date" id="departure-date" type="text" name="departure-date"
                   placeholder="1 сентября 2021">
                 <button class="modal-date-button" type="button">
                   <span class="visually-hidden">Календарь</span>
@@ -258,14 +259,14 @@
                 <span class="modal-date-text">На эти даты есть свободные номера. Пока есть.</span>
               </div>
 
-              <div class="modal-field-group-number">
+              <div class="modal-field-people-number">
                 <div class="modal-field-number field-number-adult">
                   <label class="modal-field-label" for="number-adult">Взрослые:</label>
                   <div class="modal-number-container">
                     <button class="modal-number-button minus" type="button">
                       <span class="visually-hidden">Меньше</span>
                     </button>
-                    <input class="field modal-input-number" id="number-adult" type="number" name="number-adult"
+                    <input class="modal-input-number" id="number-adult" type="number" name="number-adult"
                       value="2">
                     <button class="modal-number-button plus" type="button">
                       <span class="visually-hidden">Больше</span>
@@ -297,7 +298,7 @@
               </div>
             </div>
 
-            <a class="button modal-search-link modal-button" href="#">
+            <a class="modal-search-link modal-button" href="#">
               Найти
             </a>
 
