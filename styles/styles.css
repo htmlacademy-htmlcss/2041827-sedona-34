@@ -1181,3 +1181,92 @@ body {
   line-height: 26px;
   text-align: center;
 }
+
+/*Модальное окно*/
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  z-index: 2;
+}
+
+.modal {
+  display: block;
+  position: relative;
+  margin: auto;
+  padding: 62px 70px 70px;
+  background-color: #ffffff;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.modal-search {
+  width: 575px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  right: 0;
+  top: 0;
+  margin-top: 54px;
+  margin-right: 70px;
+  border-radius: 50%;
+  width: 53px;
+  height: 53px;
+  border: none;
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 63px;
+  text-transform: uppercase;
+}
+
+.modal-close-icon {
+  fill: #000000;
+}
+
+.modal-field-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.modal-date-text {
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0;
+  grid-column: 2/3;
+  margin-top: 11px;
+}
+
+.modal-date-text-invalid {
+  color: #FF5757;
+}
+
+.modal-search-link {
+  text-decoration: none;
+}
+
+.modal-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-transform: uppercase;
+  padding: 12px 256px 12px 255px;
+  border-radius: 10px;
+}
