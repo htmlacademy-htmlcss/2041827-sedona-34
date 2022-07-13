@@ -224,8 +224,9 @@
         </section>
       </div>
     </footer>
-    <div class="modal-container">
-      <div class="modal modal-search">
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-hotel-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть окно</span>
           <svg class="modal-close-icon" aria-hidden="true" focusable="false" width="13" height="13"
@@ -237,59 +238,59 @@
 
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="modal-field-trip-dates">
-              <div class="modal-field-dates">
+          <form class="modal-search" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-field-group-date">
+              <div class="modal-field-date">
                 <label class="modal-field-label" for="arrival-date">Дата Заезда:</label>
-                <input class="modal-input-date" id="arrival-date" type="text" name="arrival-date"
+                <input class="input modal-input-date" id="arrival-date" type="text" name="arrival-date"
                   placeholder="27 апреля 2020">
-                  <button class="modal-date-button" type="button">
+                <button class="modal-button-calendar" type="button">
                   <span class="visually-hidden">Календарь</span>
                 </button>
-                <span class="modal-date-text modal-date-text-invalid">Мы не можем отправить вас в прошлое.</span>
+                <span class="modal-date-text modal-date-text-false">Мы не можем отправить вас в прошлое.</span>
               </div>
-
-              <div class="modal-field-dates">
+              <div class="modal-field-date">
                 <label class="modal-field-label" for="departure-date">Дата Выезда:</label>
-                <input class="modal-input-date" id="departure-date" type="text" name="departure-date"
+                <input class="input modal-input-date" id="depurture-date" type="text" name="depurture-date"
                   placeholder="1 сентября 2021">
-                <button class="modal-date-button" type="button">
+                <button class="modal-button-calendar" type="button">
                   <span class="visually-hidden">Календарь</span>
                 </button>
                 <span class="modal-date-text">На эти даты есть свободные номера. Пока есть.</span>
               </div>
-
-              <div class="modal-field-people-number">
-                <div class="modal-field-number field-number-adult">
-                  <label class="modal-field-label" for="number-adult">Взрослые:</label>
-                  <div class="modal-number-container">
-                    <button class="modal-number-button minus" type="button">
-                      <span class="visually-hidden">Меньше</span>
-                    </button>
-                    <input class="modal-input-number" id="number-adult" type="number" name="number-adult"
-                      value="2">
-                    <button class="modal-number-button plus" type="button">
-                      <span class="visually-hidden">Больше</span>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="modal-field-number field-number-children">
-                  <div class="modal-field-label">
-                    <label class="modal-field-label" for="number-children">Дети:</label>
-                    <span class="tooltip">
-                      <button class="tooltip-toggle" type="button">
-                        <span class="visually-hidden">Дополнительная информация</span>
-                      </button>
-                    </span>
-                  </div>
-                </div>
-
+            </div>
+            <div class="modal-field-group-number">
+              <div class="modal-field-number field-number-people">
+                <label class="modal-field-label" for="number-people">Взрослые:</label>
                 <div class="modal-number-container">
                   <button class="modal-number-button minus" type="button">
                     <span class="visually-hidden">Меньше</span>
                   </button>
-                  <input class="field modal-input-number" id="number-children" type="number" name="number-children"
+                  <input class="input modal-input-number" id="number-people" type="number" name="number-people"
+                    value="2">
+                  <button class="modal-number-button plus" type="button">
+                    <span class="visually-hidden">Больше</span>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-field-number field-number-children">
+                <div class="modal-field-label">
+                  <label class="modal-field-label" for="number-children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <span class="visually-hidden">Дополнительная информация</span>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                      Укажите количество детей, которые
+                      будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </span>
+                </div>
+                <div class="modal-number-container">
+                  <button class="modal-number-button minus" type="button">
+                    <span class="visually-hidden">Меньше</span>
+                  </button>
+                  <input class="input modal-input-number" id="number-children" type="number" name="number-children"
                     value="1">
                   <button class="modal-number-button plus" type="button">
                     <span class="visually-hidden">Больше</span>
@@ -297,11 +298,9 @@
                 </div>
               </div>
             </div>
-
             <a class="modal-search-link modal-button" href="#">
               Найти
             </a>
-
           </form>
         </section>
       </div>
