@@ -134,6 +134,26 @@ body {
   margin: 0;
 }
 
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #756157;
+}
+
+.navigation-icon:hover,
+.navigation-icon:focus
+ {
+  fill: #756157;
+}
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.navigation-icon:active
+ {
+  fill: #756157;
+}
+
 .navigation-icon {
   display: block;
 }
